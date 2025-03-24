@@ -60,6 +60,9 @@ The system outputs a probability score and visualizes key data insights. Below a
 ## Screenshots
 ![image](https://github.com/user-attachments/assets/0b1f9cd3-3bd2-4aa1-9489-8af1887a95e3)
 
+![image](https://github.com/user-attachments/assets/3eb1e743-16c6-463f-a26f-6138f7767302)
+
+
 
 ## Future Enhancements
 - Add more disease predictions.
