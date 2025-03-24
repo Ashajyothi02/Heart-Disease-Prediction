@@ -1,88 +1,69 @@
+# Heart Disease Prediction
 
----
+## Overview
+This project is an AI-powered system that predicts the likelihood of heart disease based on input medical data. It utilizes machine learning models such as Logistic Regression, SVM, and Random Forest to classify patient data and provide a probability score of having heart disease.
 
-# Heart Disease Prediction Streamlit App
+## Features
+- Predicts the presence of heart disease based on user input.
+- Uses multiple machine learning models for better accuracy.
+- Interactive web-based interface using Streamlit.
+- User-friendly UI for entering medical parameters.
+- Provides visual representation of model performance and predictions.
 
-This is a simple Streamlit web application that allows users to predict the likelihood of heart disease based on input features. The prediction is made using a machine learning model that has been trained on heart disease data.
+## Dataset
+The project uses the **Multiple Disease Prediction Dataset**, which includes features like:
+- Age
+- Sex
+- Blood Pressure
+- Cholesterol Level
+- Fasting Blood Sugar
+- Resting ECG
+- Maximum Heart Rate Achieved
+- Exercise-Induced Angina
+- ST Depression
+- Slope of Peak Exercise ST Segment
+- Number of Major Vessels Colored by Fluoroscopy
+- Thalassemia Type
 
-![dog and cat image](data/image/hd.png)
+## Technologies Used
+- **Frontend**: Streamlit
+- **Backend**: Python, Flask
+- **Machine Learning Models**: Logistic Regression, SVM, Random Forest
+- **Libraries**: Pandas, NumPy, Scikit-Learn, Matplotlib, Seaborn
 
-[Live Website](https://heart-disease-checking.streamlit.app/)
-
-## Table of Contents
-
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [Input Features](#input-features)
-- [Output](#output)
-
-## Getting Started
-
-### Prerequisites
-
-To run this application, you need:
-
-- Python (3.6 or later)
-- Streamlit
-- pandas
-- pickle
-
-### Installation
-
-1. Clone this repository:
-
-```bash
-git clone https://github.com/Prem07a/Heart-Disease.git
-```
-
-2. Navigate to the project directory:
-
-```bash
-cd Heart-Disease
-```
-
-3. Install the required dependencies:
-
-```bash
-pip install -r requirements.txt
-```
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/YourUsername/heart-disease-prediction.git
+   cd heart-disease-prediction
+   ```
+2. Install required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Run the application:
+   ```bash
+   streamlit run app.py
+   ```
 
 ## Usage
+1. Open the web app in your browser.
+2. Enter the required medical parameters.
+3. Click **Predict** to get the result.
+4. View the predicted risk of heart disease and suggestions.
 
-Run the Streamlit app by executing the following command in your terminal:
+## Results
+The system outputs a probability score and visualizes key data insights. Below are sample results:
+- **Prediction Output:** Displays a percentage probability of heart disease.
+- **Graphs & Charts:** Visualizes feature importance and model performance.
 
-```bash
-streamlit run ./code/website/app.py
-```
+## Screenshots
+![image](https://github.com/user-attachments/assets/0b1f9cd3-3bd2-4aa1-9489-8af1887a95e3)
 
-The web application will open in your default web browser. You can then interact with the app by inputting various features and clicking the "Predict" button to get the predicted outcome.
 
-## Input Features
+## Future Enhancements
+- Add more disease predictions.
+- Improve model accuracy with deep learning.
+- Deploy on cloud platforms for wider accessibility.
 
-The following input features can be adjusted in the app:
 
-- Age
-- Sex (Male/Female)
-- Chest Pain Type
-- Resting Blood Pressure
-- Cholesterol
-- Fasting Blood Sugar (> 120 mg/dl)
-- Resting Electrocardiographic Results
-- Maximum Heart Rate Achieved
-- Exercise Induced Angina
-- ST Depression Induced by Exercise Relative to Rest
-- Slope of the Peak Exercise ST Segment
-- Number of Major Vessels Colored by Fluoroscopy
-- Thalassemia
-
-## Output
-
-After adjusting the input features and clicking "Predict," the app will display the predicted outcome, indicating whether the prediction suggests a positive or negative likelihood of heart disease.
-
-## Thanks
-
-I would like to thank <a href = "https://github.com/Akshat-Projects">Akshat</a> for reporting a bug in streamlit app.
-
----
